@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies", "Movies\Movies.csproj", "{E6F0B22C-17DD-4B03-AFE6-50880C4B0B4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Data", "Movies.Data\Movies.Data.csproj", "{0CED597C-ED86-406E-82DA-F523DD0ED209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Core", "Movies.Core\Movies.Core.csproj", "{A0D2FC5E-386F-416B-9E4A-94487EB3EA0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6F0B22C-17DD-4B03-AFE6-50880C4B0B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6F0B22C-17DD-4B03-AFE6-50880C4B0B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6F0B22C-17DD-4B03-AFE6-50880C4B0B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6F0B22C-17DD-4B03-AFE6-50880C4B0B4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CED597C-ED86-406E-82DA-F523DD0ED209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CED597C-ED86-406E-82DA-F523DD0ED209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CED597C-ED86-406E-82DA-F523DD0ED209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CED597C-ED86-406E-82DA-F523DD0ED209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0D2FC5E-386F-416B-9E4A-94487EB3EA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0D2FC5E-386F-416B-9E4A-94487EB3EA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0D2FC5E-386F-416B-9E4A-94487EB3EA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0D2FC5E-386F-416B-9E4A-94487EB3EA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

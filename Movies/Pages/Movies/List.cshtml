@@ -1,0 +1,17 @@
+﻿@page
+@model ListModel
+@{
+}
+
+<h1>Movies</h1>
+<table class="table">
+    @foreach(var movie in Model.Movies)
+    {
+        <tr>
+            <td>@movie.Title</td>
+            <td>@movie.Description</td>
+            <td>@movie.Genre</td>
+            <td>@movie.Location</td>
+        </tr>
+     }
+</table>
