@@ -5,7 +5,8 @@
         public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public string Location { get; set; }
+        public string Length { get; set; }
         public Genre Genre { get; set; }
+        public string Location { get; set; }
     }
 }

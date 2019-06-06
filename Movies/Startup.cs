@@ -50,12 +50,20 @@ namespace Movies
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
             app.UseMvc();
+        }
+
+        private RequestDelegate SayHelloMiddleware(RequestDelegate arg)
+        {
+            return async context =>
+            {
+                await context.Response.WriteAsync("Hello, World!");
+            };
         }
     }
 }

@@ -16,6 +16,9 @@ namespace Movies.Pages.Movies
 
         public IEnumerable<Movie> Movies { get; set; }
 
+        [BindProperty(SupportsGet =true)]
+        public string SearchTerm { get; set; }
+
         public ListModel(IMovieData movieData)
         {
             this.movieData = movieData;
@@ -23,7 +26,7 @@ namespace Movies.Pages.Movies
 
         public void OnGet()
         {
-            Movies = movieData.GetAllMovies();
+            Movies = movieData.GetMoviesByName(SearchTerm);
         }
     }
 }

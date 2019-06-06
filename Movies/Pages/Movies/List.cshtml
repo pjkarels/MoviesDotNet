@@ -4,7 +4,31 @@
 }
 
 <h1>Movies</h1>
+
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control"
+                   asp-for="SearchTerm" />
+            <span class="input-group-btn">
+                <button class="btn btn-default">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+
 <table class="table">
+    <thead class="table">
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Genre</th>
+            <th>Location</th>
+            <th>Length</th>
+        </tr>
+    </thead>
     @foreach(var movie in Model.Movies)
     {
         <tr>
@@ -12,6 +36,14 @@
             <td>@movie.Description</td>
             <td>@movie.Genre</td>
             <td>@movie.Location</td>
+            <td>
+                <a class="btn btn-lg"
+                    asp-page="./Details"
+                    asp-route-movieId="@movie.Id">
+                    <i class="glyphicon glyphicon-zoom-in"></i>
+                </a>
+            </td>
+            <td>@movie.Length</td>
         </tr>
      }
 </table>
