@@ -5,6 +5,11 @@
 
 <h1>Movies</h1>
 
+<a class="btn btn-lg"
+   asp-page="./Add">Add movie
+    <i class="glyphicon glyphicon-plus"></i>
+</a>
+
 <form method="get">
     <div class="form-group">
         <div class="input-group">
@@ -31,19 +36,19 @@
     </thead>
     @foreach(var movie in Model.Movies)
     {
-        <tr>
-            <td>@movie.Title</td>
-            <td>@movie.Description</td>
-            <td>@movie.Genre</td>
-            <td>@movie.Location</td>
-            <td>
-                <a class="btn btn-lg"
-                    asp-page="./Details"
-                    asp-route-movieId="@movie.Id">
-                    <i class="glyphicon glyphicon-zoom-in"></i>
-                </a>
-            </td>
-            <td>@movie.Length</td>
-        </tr>
+    <tr>
+        <td>@movie.Title</td>
+        <td>@movie.Description</td>
+        <td>@movie.Genre</td>
+        <td>@movie.Location</td>
+        <td>@movie.Length</td>
+        <td>
+            <a class="btn btn-lg"
+               asp-page="./Details"
+               asp-route-movieId="@movie.Id">
+                <i class="glyphicon glyphicon-zoom-in"></i>
+            </a>
+        </td>
+    </tr>
      }
 </table>
